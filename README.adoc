@@ -1,0 +1,13 @@
+= QJSValue singleton
+In this article, we'll see how we can use the singleton type to pass values from Cpp to QML using the QJSValue type
+
+:toc:
+:sectnums:
+
+== Introduction
+In order to create a project to pass value from Cpp to QML we first need to know how we can do so. That's where the `QML_SINGLETON` and `QML_ELEMENT` macro has to be used in the class. 
+
+== Singleton
+In order to create a singleton, you'll have to declare the class to be part of the QML singleton by using either `QML_SINGLETON` and `QML_ELEMENT` or using the method `qmlRegisterSingletonType`.
+
+IMPORTANT: When you are registering a type as a singleton using the method, you have to make sure that the type you're passing start with an uppercase letter.
